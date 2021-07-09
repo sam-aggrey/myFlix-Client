@@ -21899,7 +21899,7 @@ class MainView extends _reactDefault.default.Component {
             ,
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 51
+                lineNumber: 54
             },
             __self: this
         }));
@@ -21908,7 +21908,7 @@ class MainView extends _reactDefault.default.Component {
             className: "main-view",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 54
+                lineNumber: 57
             },
             __self: this
         }));
@@ -21916,7 +21916,7 @@ class MainView extends _reactDefault.default.Component {
             className: "main-view",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 57
+                lineNumber: 60
             },
             __self: this
         }, selectedMovie ? /*#__PURE__*/ _reactDefault.default.createElement(_movieView.MovieView, {
@@ -21926,7 +21926,7 @@ class MainView extends _reactDefault.default.Component {
             },
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 60
+                lineNumber: 63
             },
             __self: this
         }) : movies.map((movie)=>/*#__PURE__*/ _reactDefault.default.createElement(_movieCard.MovieCard, {
@@ -21937,7 +21937,7 @@ class MainView extends _reactDefault.default.Component {
                 },
                 __source: {
                     fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
-                    lineNumber: 62
+                    lineNumber: 65
                 },
                 __self: this
             })
