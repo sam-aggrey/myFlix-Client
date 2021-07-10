@@ -1,5 +1,5 @@
 # myFlix-Client
-## Achievement 3: 
+### Achievement 3: 
 React App (myFlix-Client)
 
 ### Objective: 
