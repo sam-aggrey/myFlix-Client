@@ -1,2 +1,5 @@
 node_modules
 .cache
+.parcel-cache/00/64a97e62181c93ed4c3b3037a02d0c.blob
+*.blob
+*.v8
