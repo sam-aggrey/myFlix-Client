@@ -30,7 +30,7 @@ import Card from 'react-bootstrap/Card';
 export class MovieCard extends React.Component {
   render() {
     const { movie, onMovieClick } = this.props;
-
+     
     return (
       <Card>
         <Card.Img variant="top" src={movie.ImagePath} />
@@ -54,12 +54,12 @@ MovieCard.propTypes = {
       Description: PropTypes.string.isRequired
     }),
     Director: PropTypes.shape({
-      Name: PropTypes.string.isRequired,
+      Name: PropTypes.string,
       Bio: PropTypes.string.isRequired,
       Birth: PropTypes.string.isRequired
     }),
-    ImagePath: PropTypes.string.isRequired,
-    Featured: PropTypes.bool.isRequired,
+    ImagePath: PropTypes.string,
+    Featured: PropTypes.bool,
     
   }).isRequired
 };
