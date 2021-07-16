@@ -51,6 +51,7 @@ setSelectedMovie(movie) {
 render() {
 
     const { movies, selectedMovie, user } = this.state;
+    
 
 
 
@@ -66,15 +67,19 @@ render() {
     {selectedMovie
       ? (
         <Row className="justify-content-md-center">
-          <Col md={8}>
-            <MovieView movie={selectedMovie} onBackClick={newSelectedMovie => { this.setSelectedMovie(newSelectedMovie); }} />
+         
+          <Col md={8} >
+        
+           
+            <MovieView movie={selectedMovie} onBackClick={newSelectedMovie => { this.setSelectedMovie(newSelectedMovie); }}/>
+                
           </Col>
         </Row>
       )
       : (
         <Row className="justify-content-md-center">
-          {movies.map(movie => (
-            <Col md={3}>
+          {movies.map(movie => ( 
+            <Col md={3}  key={movie._id}>
               <MovieCard key={movie._id} movie={movie} onMovieClick={newSelectedMovie => { this.setSelectedMovie(newSelectedMovie); }}/>
             </Col>
           ))}
