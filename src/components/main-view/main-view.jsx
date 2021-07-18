@@ -42,6 +42,12 @@ setSelectedMovie(movie) {
       user
     });
   }
+  
+   changeReg(regStatus) {
+    this.setState({
+      registered: regStatus
+    });
+  }
 
 render() {
 
@@ -52,6 +58,9 @@ render() {
     /* If there is no user, the LoginView is rendered. If there is a user logged in, the user details are passed as a prop to the LoginView*/
       
     if (!user) return <LoginView onLoggedIn={user => this.onLoggedIn(user)} />;
+     // Logic for Registration 
+      if (!user && registered) return <LoginView regData={Status => this.changeReg(Status)} loggingIn={user => this.onLoggedIn(user)} />;
+      if (!user && !registered) return <RegistrationView  regData={Status => this.changeReg(Status)}/>; 
 
     // Before the movies have been loaded
     if (movies.length === 0) return <div className="main-view" />;
