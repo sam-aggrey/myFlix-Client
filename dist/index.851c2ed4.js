@@ -25867,7 +25867,7 @@ class MovieView extends _reactDefault.default.Component {
                 lineNumber: 26
             },
             __self: this
-        }, movie.Genre)), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        }, movie.Genre.Name)), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "movie-director",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
@@ -25888,7 +25888,7 @@ class MovieView extends _reactDefault.default.Component {
                 lineNumber: 30
             },
             __self: this
-        }, movie.Director)), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+        }, movie.Director.Name)), /*#__PURE__*/ _reactDefault.default.createElement("button", {
             onClick: ()=>{
                 onBackClick(null);
             },
