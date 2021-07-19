@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from 'prop-types';
 
 export function RegistrationView(props) {
   const [username, setUsername] = useState("");
@@ -24,31 +25,40 @@ export function RegistrationView(props) {
       <label>
         Create Password:
         <input
-          type="password"
+          type="password" placeholder="your email password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
         <label>
           Email:
           <input
-            type="email"
+            type="email" placeholder="your email address" 
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)} 
           />
         </label>
         <label>
           Birthday:
           <input
-            type="date"
+            type="date" 
             value={birthday}
             onChange={(e) => setBirthday(e.target.value)}
           />
         </label>
       </label>
-      <button type="submit" onClick={handleSubmit}>
+      <button type="submit" onClick={handleSubmit}>Submit</button>
         <button onClick={() => { onBackClick(null); }}>Back</button>
-        Submit
-      </button>
+       
     </form>
   );
 }
+
+RegistrationView.propTypes = {
+  register: PropTypes.shape({
+    Username: PropTypes.string.isRequired,
+    Password: PropTypes.string.isRequired,
+    Email: PropTypes.string.isRequired,
+    Birthdate: PropTypes.string.isRequired
+  }),
+};
+
