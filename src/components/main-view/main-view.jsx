@@ -42,10 +42,16 @@ setSelectedMovie(movie) {
       user
     });
   }
+    
+ onRegister(register) {
+    this.setState({
+      register,
+    });
+  }
 
 render() {
 
-    const { movies, selectedMovie, user } = this.state;
+    const { movies, selectedMovie, user,register } = this.state;
     
 
 
