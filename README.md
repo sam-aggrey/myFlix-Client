@@ -1,15 +1,12 @@
 # myFlix-Client
-### Achievement 3: 
+### Achievement 3:
 React App (myFlix-Client)
 
-### Objective: 
+### Objective:
 Using React to build the client-side for an application called myFlix
-
-### User Stories:
+### User Stories: 
 As a user, I want to be able to access information on movies, directors, and genres to help me choose what movies to watch.
-### Dependencies: 
+### Dependencies:
 -Parcel -React -React-DOM
-###  Parcel path to index
-:C:\Users\lenovo\Desktop\myFlix-client\myFlix-client\src/index.html
-
-
+###  Parcel path to index:
+C:\Users\lenovo\Desktop\myFlix-client\myFlix-client\src/index.html
