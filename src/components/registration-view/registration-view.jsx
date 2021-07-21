@@ -6,7 +6,7 @@ import './registration-view.scss';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 export function RegistrationView(props) {
   const [username, setUsername] = useState('');
@@ -17,7 +17,7 @@ export function RegistrationView(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://movieapi-yayacdm.herokuapp.com/users', {
+    axios.post('https://sammy-flix.herokuapp.com/users', {
       Username: username,
       Password: password,
       Email: email,
@@ -35,7 +35,7 @@ export function RegistrationView(props) {
         }
       });
     console.log(username, password, email, birthdate);
-  };
+  }; 
 
   return (
     <Form className="RegForm" onSubmit={handleSubmit} noValidate validated={validated}>
@@ -61,10 +61,9 @@ export function RegistrationView(props) {
       </Form.Group>
       <span>
         <Button type="submit" onClick={handleSubmit}>Submit</Button>
-        {' '}
-        <Link to="/">
+        
           <Button variant="secondary" type="button">Back</Button>
-        </Link>
+ 
       </span>
     </Form >
   )
