@@ -1,19 +1,12 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-//import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
-//import PropTypes from 'prop-types';
-import './registration-view.scss';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import React, { useState } from "react";
 import PropTypes from 'prop-types';
 //import { Link } from "react-router-dom";
 
 export function RegistrationView(props) {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [birthdate, setBirthdate] = useState('');
-  const validated = useState(null);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [birthday, setBirthday] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
