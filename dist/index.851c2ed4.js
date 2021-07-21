@@ -21871,6 +21871,7 @@ var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _loginView = require("../login-view/login-view");
 var _movieCard = require("../movie-card/movie-card");
 var _movieView = require("../movie-view/movie-view");
+var _registrationView = require("../registration-view/registration-view");
 var _row = require("react-bootstrap/Row");
 var _rowDefault = parcelHelpers.interopDefault(_row);
 var _col = require("react-bootstrap/Col");
@@ -21885,7 +21886,8 @@ class MainView extends _reactDefault.default.Component {
         this.state = {
             movies: [],
             selectedMovie: null,
-            user: null
+            user: null,
+            register: null
         };
     }
     componentDidMount() {
@@ -21907,14 +21909,28 @@ class MainView extends _reactDefault.default.Component {
             user
         });
     }
+    onRegister(register) {
+        this.setState({
+            register
+        });
+    }
     render() {
-        const { movies , selectedMovie , user  } = this.state;
+        const { movies , selectedMovie , user , register  } = this.state;
+        if (!register) return(/*#__PURE__*/ _reactDefault.default.createElement(_registrationView.RegistrationView, {
+            onRegister: (register1)=>this.onRegister(register1)
+            ,
+            __source: {
+                fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
+                lineNumber: 63
+            },
+            __self: this
+        }));
         /* If there is no user, the LoginView is rendered. If there is a user logged in, the user details are passed as a prop to the LoginView*/ if (!user) return(/*#__PURE__*/ _reactDefault.default.createElement(_loginView.LoginView, {
             onLoggedIn: (user1)=>this.onLoggedIn(user1)
             ,
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 59
+                lineNumber: 67
             },
             __self: this
         }));
@@ -21923,7 +21939,7 @@ class MainView extends _reactDefault.default.Component {
             className: "main-view",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 62
+                lineNumber: 70
             },
             __self: this
         }));
@@ -21931,21 +21947,21 @@ class MainView extends _reactDefault.default.Component {
             className: "main-view",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 65
+                lineNumber: 73
             },
             __self: this
         }, selectedMovie ? /*#__PURE__*/ _reactDefault.default.createElement(_rowDefault.default, {
             className: "justify-content-md-center",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 68
+                lineNumber: 76
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_colDefault.default, {
             md: 8,
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 69
+                lineNumber: 78
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_movieView.MovieView, {
@@ -21955,21 +21971,22 @@ class MainView extends _reactDefault.default.Component {
             },
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 70
+                lineNumber: 81
             },
             __self: this
         }))) : /*#__PURE__*/ _reactDefault.default.createElement(_rowDefault.default, {
             className: "justify-content-md-center",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
-                lineNumber: 75
+                lineNumber: 87
             },
             __self: this
         }, movies.map((movie)=>/*#__PURE__*/ _reactDefault.default.createElement(_colDefault.default, {
                 md: 3,
+                key: movie._id,
                 __source: {
                     fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
-                    lineNumber: 77
+                    lineNumber: 89
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement(_movieCard.MovieCard, {
@@ -21980,7 +21997,7 @@ class MainView extends _reactDefault.default.Component {
                 },
                 __source: {
                     fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\main-view\\main-view.jsx",
-                    lineNumber: 78
+                    lineNumber: 90
                 },
                 __self: this
             }))
@@ -21994,7 +22011,7 @@ exports.default = MainView;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","axios":"7rA65","../login-view/login-view":"21DRQ","../movie-card/movie-card":"3mCkk","../movie-view/movie-view":"59DeK","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP","react-bootstrap/Row":"3fzwD","react-bootstrap/Col":"2D0r8","react-bootstrap/Button":"1ru0l","react-bootstrap":"4n7hB"}],"7rA65":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","../login-view/login-view":"21DRQ","../movie-card/movie-card":"3mCkk","../movie-view/movie-view":"59DeK","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP","react-bootstrap/Row":"3fzwD","react-bootstrap/Col":"2D0r8","react-bootstrap/Button":"1ru0l","react-bootstrap":"4n7hB","../registration-view/registration-view":"7FMlT"}],"7rA65":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 
 },{"./lib/axios":"4qfhW"}],"4qfhW":[function(require,module,exports) {
@@ -25820,12 +25837,12 @@ MovieCard.propTypes = {
             Description: _propTypesDefault.default.string.isRequired
         }),
         Director: _propTypesDefault.default.shape({
-            Name: _propTypesDefault.default.string.isRequired,
+            Name: _propTypesDefault.default.string,
             Bio: _propTypesDefault.default.string.isRequired,
             Birth: _propTypesDefault.default.string.isRequired
         }),
-        ImagePath: _propTypesDefault.default.string.isRequired,
-        Featured: _propTypesDefault.default.bool.isRequired
+        ImagePath: _propTypesDefault.default.string,
+        Featured: _propTypesDefault.default.bool
     }).isRequired
 };
 
@@ -26018,95 +26035,77 @@ parcelHelpers.export(exports, "MovieView", ()=>MovieView
 );
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
 class MovieView extends _reactDefault.default.Component {
     render() {
         const { movie , onBackClick  } = this.props;
+        console.log(movie);
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "movie-view",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
-                lineNumber: 9
+                lineNumber: 12
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "movie-poster",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
-                lineNumber: 10
+                lineNumber: 13
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("img", {
             src: movie.ImagePath,
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
-                lineNumber: 11
+                lineNumber: 14
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "movie-title",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
-                lineNumber: 13
+                lineNumber: 16
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
             className: "label",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
-                lineNumber: 14
+                lineNumber: 17
             },
             __self: this
         }, "Title: "), /*#__PURE__*/ _reactDefault.default.createElement("span", {
             className: "value",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
-                lineNumber: 15
+                lineNumber: 18
             },
             __self: this
         }, movie.Title)), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "movie-description",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
-                lineNumber: 17
+                lineNumber: 20
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
             className: "label",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
-                lineNumber: 18
+                lineNumber: 21
             },
             __self: this
         }, "Description: "), /*#__PURE__*/ _reactDefault.default.createElement("span", {
             className: "value",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
-                lineNumber: 19
+                lineNumber: 22
             },
             __self: this
         }, movie.Description)), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "movie-genre",
-            __source: {
-                fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
-                lineNumber: 21
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
-            className: "label",
-            __source: {
-                fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
-                lineNumber: 22
-            },
-            __self: this
-        }, "Genre: "), /*#__PURE__*/ _reactDefault.default.createElement("span", {
-            className: "value",
-            __source: {
-                fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
-                lineNumber: 23
-            },
-            __self: this
-        }, movie.Genre)), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "movie-director",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
                 lineNumber: 25
@@ -26119,32 +26118,71 @@ class MovieView extends _reactDefault.default.Component {
                 lineNumber: 26
             },
             __self: this
-        }, "Director: "), /*#__PURE__*/ _reactDefault.default.createElement("span", {
+        }, "Genre: "), /*#__PURE__*/ _reactDefault.default.createElement("span", {
             className: "value",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
                 lineNumber: 27
             },
             __self: this
-        }, movie.Director)), /*#__PURE__*/ _reactDefault.default.createElement("button", {
-            onClick: ()=>{
-                onBackClick(null);
+        }, movie.Genre.Name)), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "movie-director",
+            __source: {
+                fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
+                lineNumber: 29
             },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            className: "label",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
                 lineNumber: 30
             },
             __self: this
+        }, "Director: "), /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            className: "value",
+            __source: {
+                fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
+                lineNumber: 31
+            },
+            __self: this
+        }, movie.Director.Name)), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            onClick: ()=>{
+                onBackClick(null);
+            },
+            __source: {
+                fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
+                lineNumber: 35
+            },
+            __self: this
         }, "Back")));
     }
 }
+MovieView.propTypes = {
+    movie: _propTypesDefault.default.shape({
+        _id: _propTypesDefault.default.string.isRequired,
+        Title: _propTypesDefault.default.string.isRequired,
+        Description: _propTypesDefault.default.string.isRequired,
+        ImagePath: _propTypesDefault.default.string,
+        Genre: _propTypesDefault.default.shape({
+            Name: _propTypesDefault.default.string.isRequired,
+            Description: _propTypesDefault.default.string.isRequired
+        }),
+        Director: _propTypesDefault.default.shape({
+            Name: _propTypesDefault.default.string.isRequired,
+            Bio: _propTypesDefault.default.string.isRequired,
+            Birth: _propTypesDefault.default.string
+        })
+    }),
+    onBackClick: _propTypesDefault.default.func.isRequired
+};
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP"}],"3fzwD":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP","prop-types":"4dfy5"}],"3fzwD":[function(require,module,exports) {
 "use strict";
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 exports.__esModule = true;
@@ -36804,6 +36842,242 @@ var _default = Tooltip;
 exports.default = _default;
 module.exports = exports["default"];
 
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","classnames":"5aJRc","react":"3b2NM","prop-types-extra/lib/isRequiredForA11y":"4XrEc","./ThemeProvider":"4rz1S"}],"2N7FH":[function() {},{}]},["1j6wU","2JMtt","2evon"], "2evon", "parcelRequire1216")
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","classnames":"5aJRc","react":"3b2NM","prop-types-extra/lib/isRequiredForA11y":"4XrEc","./ThemeProvider":"4rz1S"}],"7FMlT":[function(require,module,exports) {
+var helpers = require("../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+//import { Link } from "react-router-dom";
+parcelHelpers.export(exports, "RegistrationView", ()=>RegistrationView
+);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+//import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+//import PropTypes from 'prop-types';
+var _registrationViewScss = require("./registration-view.scss");
+var _form = require("react-bootstrap/Form");
+var _formDefault = parcelHelpers.interopDefault(_form);
+var _button = require("react-bootstrap/Button");
+var _buttonDefault = parcelHelpers.interopDefault(_button);
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _s = $RefreshSig$();
+function RegistrationView(props) {
+    _s();
+    const [username, setUsername] = _react.useState('');
+    const [email, setEmail] = _react.useState('');
+    const [password, setPassword] = _react.useState('');
+    const [birthdate, setBirthdate] = _react.useState('');
+    const validated = _react.useState(null);
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        _axiosDefault.default.post('https://sammy-flix.herokuapp.com/users', {
+            Username: username,
+            Password: password,
+            Email: email,
+            Birthdate: birthdate
+        }).then((response)=>{
+            const data = response.data;
+            console.log(data);
+            window.open('/', '_self');
+            alert("You have sucessfully registered.");
+        }).catch((error)=>{
+            if (error.response && error.response.status === 400) alert('The value you entered is not valid.');
+        });
+        console.log(username, password, email, birthdate);
+    };
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default, {
+        className: "RegForm",
+        onSubmit: handleSubmit,
+        noValidate: true,
+        validated: validated,
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 41
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Group, {
+        controlId: "formGroupUsername",
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 42
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Label, {
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 43
+        },
+        __self: this
+    }, "Username"), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control, {
+        type: "text",
+        placeholder: "Enter Username",
+        value: username,
+        autoComplete: "username",
+        onChange: (e)=>setUsername(e.target.value)
+        ,
+        pattern: "[a-zA-Z0-9]{5,}",
+        minLength: "5",
+        required: true,
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 44
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control.Feedback, {
+        type: "invalid",
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 45
+        },
+        __self: this
+    }, "Please provide a valid username at least 5 characters long.")), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Group, {
+        controlId: "formGroupPassword",
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 47
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Label, {
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 48
+        },
+        __self: this
+    }, "Password"), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control, {
+        type: "password",
+        placeholder: "Enter Password",
+        value: password,
+        autoComplete: "password",
+        onChange: (e)=>setPassword(e.target.value)
+        ,
+        minLength: "5",
+        required: true,
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 49
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control.Feedback, {
+        type: "invalid",
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 50
+        },
+        __self: this
+    }, "Please provide a valid password at least 5 characters long.")), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Group, {
+        controlId: "formGroupEmail",
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 52
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Label, {
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 53
+        },
+        __self: this
+    }, "Email"), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control, {
+        type: "email",
+        placeholder: "Enter Email",
+        value: email,
+        autoComplete: "email",
+        onChange: (e)=>setEmail(e.target.value)
+        ,
+        required: true,
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 54
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control.Feedback, {
+        type: "invalid",
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 55
+        },
+        __self: this
+    }, "Please provide a valid email address.")), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Group, {
+        controlId: "formGroupBirthdate",
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 57
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Label, {
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 58
+        },
+        __self: this
+    }, "Birthdate"), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control, {
+        type: "date",
+        placeholder: "00-00-0000",
+        value: birthdate,
+        onChange: (e)=>setBirthdate(e.target.value)
+        ,
+        required: true,
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 59
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control.Feedback, {
+        type: "invalid",
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 60
+        },
+        __self: this
+    }, "Please enter a valid birthday.")), /*#__PURE__*/ _reactDefault.default.createElement("span", {
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 62
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_buttonDefault.default, {
+        type: "submit",
+        onClick: handleSubmit,
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 63
+        },
+        __self: this
+    }, "Submit"), /*#__PURE__*/ _reactDefault.default.createElement(_buttonDefault.default, {
+        variant: "secondary",
+        type: "button",
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 65
+        },
+        __self: this
+    }, "Back"))));
+}
+_s(RegistrationView, "LsqjRVIojXumBfgnqFLvy9IWCkc=");
+_c = RegistrationView;
+RegistrationView.propTypes = {
+    register: _propTypesDefault.default.shape({
+        Username: _propTypesDefault.default.string.isRequired,
+        Password: _propTypesDefault.default.string.isRequired,
+        Email: _propTypesDefault.default.string.isRequired,
+        Birthdate: _propTypesDefault.default.string.isRequired
+    })
+};
+var _c;
+$RefreshReg$(_c, "RegistrationView");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","./registration-view.scss":"3m90g","react-bootstrap/Form":"6A5ko","react-bootstrap/Button":"1ru0l","prop-types":"4dfy5","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP"}],"3m90g":[function() {},{}],"2N7FH":[function() {},{}]},["1j6wU","2JMtt","2evon"], "2evon", "parcelRequire1216")
 
 //# sourceMappingURL=index.851c2ed4.js.map
