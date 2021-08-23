@@ -1,59 +1,38 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import './movie-card.scss';
+
+import { Link } from "react-router-dom";
 
 
-export class MovieView extends React.Component {
-    
+export class MovieCard extends React.Component {
   render() {
-    const { movie, onBackClick } = this.props;
-      console.log(movie);
+    const { movie } = this.props;
 
     return (
-      <div className="movie-view">
-        <div className="movie-poster">
-          <img src={movie.ImagePath} />
-        </div>
-        <div className="movie-title">
-          <span className="label">Title: </span>
-          <span className="value">{movie.Title}</span>
-        </div>
-        <div className="movie-description">
-          <span className="label">Description: </span>
-          <span className="value">{movie.Description}</span>
-        </div>
-         
-        <div className="movie-genre">
-          <span className="label">Genre: </span>
-          <span className="value">{movie.Genre.Name}</span>
-        </div>
-        <div className="movie-director">
-          <span className="label">Director: </span>
-          <span className="value">{movie.Director.Name}</span>
-        </div>
-    
-      
-        <button onClick={() => { onBackClick(null); }}>Back</button>
-
-      </div>
+      <Card bg='secondary' text='white'>
+        <Link to={`/movies/${movie._id}`}>
+          <Card.Img className="image-container" variant="top" src={movie.ImageURL} />
+        </Link>
+        <Card.Body>
+          <Card.Title><h4>{movie.Title}</h4></Card.Title>
+          <Card.Text>{movie.Description}</Card.Text>
+          <Link to={`/movies/${movie._id}`}>
+            <Button variant="primary">Open</Button>
+          </Link>
+        </Card.Body>
+      </Card>
     );
   }
 }
-MovieView.propTypes = {
+
+MovieCard.propTypes = {
   movie: PropTypes.shape({
-    _id: PropTypes.string.isRequired,
     Title: PropTypes.string.isRequired,
     Description: PropTypes.string.isRequired,
-    ImagePath: PropTypes.string,
-    Genre: PropTypes.shape({
-      Name: PropTypes.string.isRequired,
-      Description: PropTypes.string.isRequired
-    }),
-    Director: PropTypes.shape({
-      Name: PropTypes.string.isRequired,
-      Bio: PropTypes.string.isRequired,
-      Birth: PropTypes.string
-    }),
-  }),
-  onBackClick: PropTypes.func.isRequired
+    ImageURL: PropTypes.string.isRequired,
+    Featured: PropTypes.bool.isRequired,
+  }).isRequired,
 };
-
