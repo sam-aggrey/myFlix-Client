@@ -1,76 +1,168 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-//import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
-//import PropTypes from 'prop-types';
-import './registration-view.scss';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import React, { useState } from "react";
 import PropTypes from 'prop-types';
-//import { Link } from "react-router-dom";
+import axios from 'axios';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/row';
+import { Link } from "react-router-dom";
+
+
+import './registration-view.scss';
 
 export function RegistrationView(props) {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [birthdate, setBirthdate] = useState('');
-  const validated = useState(null);
+  const [name, setName] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [birthdate, setBirthdate] = useState("");
+
+
+  const [nameError, setNameError] = useState({});
+  const [usernameError, setUsernameError] = useState({});
+  const [passwordError, setPasswordError] = useState({});
+  const [emailError, setEmailError] = useState({});
+  const [birthdateError, setBirthdateError] = useState({});
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('https://sammy-flix.herokuapp.com/users', {
-      Username: username,
-      Password: password,
-      Email: email,
-      Birthdate: birthdate
-    })
-      .then(response => {
-        const data = response.data;
-        console.log(data);
-        window.open('/', '_self'); 
-        alert("You have sucessfully registered.");
+    let setisValid = formValidation();
+    if (setisValid) {
+      axios.post('https://sammy-flix.herokuapp.com/users', {
+        Name: name,
+        Username: username,
+        Password: password,
+        Email: email,
+        Birthdate: birthdate
       })
-      .catch(error => {
-        if (error.response && error.response.status === 400) {
-          alert('The value you entered is not valid.')
-        }
-      });
-    console.log(username, password, email, birthdate);
-  }; 
+        .then(response => {
+          const data = response.data;
+          console.log(data);
+          window.open('/', '_self'); // the second argument '_self' is necessary so that the page will open in the current tab
+        })
+        .catch(e => {
+          console.log('error registering the user')
+        });
+    };
+  }
+
+  const formValidation = () => {
+    let nameError = {};
+    let usernameError = {};
+    let passwordError = {};
+    let emailError = {};
+    let birthdateError = {};
+    let isValid = true;
+
+    if (name === '') {
+      nameError.nameEmpty = "Please enter your Name.";
+      isValid = false;
+    }
+    if (username.trim().length < 4) {
+      usernameError.usernameShort = "Username incorrect. Use at least 4 characters.";
+      isValid = false;
+    }
+    if (password.trim().length < 5) {
+      passwordError.passwordMissing = "Password incorrect. Use at least 5 characters.";
+      isValid = false;
+    }
+    if (!(email && email.includes(".") && email.includes("@"))) {
+      emailError.emailNotEmail = "Email address incorrect.";
+      isValid = false;
+    }
+    if (birthdate === '') {
+      birthdateError.birthdateEmpty = "Please enter your birthdate.";
+      isValid = false;
+    }
+    setNameError(nameError);
+    setUsernameError(usernameError);
+    setPasswordError(passwordError);
+    setEmailError(emailError);
+    setBirthdateError(birthdateError);
+    return isValid;
+  };
 
   return (
-    <Form className="RegForm" onSubmit={handleSubmit} noValidate validated={validated}>
-      <Form.Group controlId="formGroupUsername">
-        <Form.Label>Username</Form.Label>
-        <Form.Control type="text" placeholder="Enter Username" value={username} autoComplete="username" onChange={e => setUsername(e.target.value)} pattern='[a-zA-Z0-9]{5,}' minLength="5" required />
-        <Form.Control.Feedback type="invalid">Please provide a valid username at least 5 characters long.</Form.Control.Feedback>
+    <Form className="register justify-content-md-center">
+      <Row>
+        <Form.Group controlId="formName">
+          <Form.Label>Name:</Form.Label>
+          <Form.Control type="text" value={name} onChange={e => setName(e.target.value)} />
+          {Object.keys(nameError).map((key) => {
+            return (
+              <div key={key}>
+                {nameError[key]}
+              </div>
+            );
+          })}
+        </Form.Group>
+      </Row>
+
+      <Form.Group controlId="formUsername">
+        <Form.Label>Username:</Form.Label>
+        <Form.Control type="text" value={username} onChange={e => setUsername(e.target.value)} />
+        {Object.keys(usernameError).map((key) => {
+          return (
+            <div key={key}>
+              {usernameError[key]}
+            </div>
+          );
+        })}
       </Form.Group>
-      <Form.Group controlId="formGroupPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Enter Password" value={password} autoComplete="password" onChange={e => setPassword(e.target.value)} minLength="5" required />
-        <Form.Control.Feedback type="invalid">Please provide a valid password at least 5 characters long.</Form.Control.Feedback>
+
+      <Row>
+        <Form.Group controlId="formPassword">
+          <Form.Label>Create Password:</Form.Label>
+          <Form.Control type="password" value={password} onChange={e => setPassword(e.target.value)} />
+          {Object.keys(passwordError).map((key) => {
+            return (
+              <div key={key}>
+                {passwordError[key]}
+              </div>
+            );
+          })}
+        </Form.Group>
+      </Row>
+
+      <Row>
+        <Form.Group controlId="formEmail">
+          <Form.Label>Email:</Form.Label>
+          <Form.Control type="email" value={email} onChange={e => setEmail(e.target.value)} />
+          {Object.keys(emailError).map((key) => {
+            return (
+              <div key={key}>
+                {emailError[key]}
+              </div>
+            );
+          })}
+        </Form.Group>
+      </Row>
+
+      <Form.Group controlId="formBirthdate">
+        <Form.Label>Birthdate:</Form.Label>
+        <Form.Control type="date" value={birthdate} onChange={e => setBirthdate(e.target.value)} />
+        {Object.keys(birthdateError).map((key) => {
+          return (
+            <div key={key}>
+              {birthdateError[key]}
+            </div>
+          );
+        })}
       </Form.Group>
-      <Form.Group controlId="formGroupEmail">
-        <Form.Label>Email</Form.Label>
-        <Form.Control type="email" placeholder="Enter Email" value={email} autoComplete="email" onChange={e => setEmail(e.target.value)} required />
-        <Form.Control.Feedback type="invalid">Please provide a valid email address.</Form.Control.Feedback>
-      </Form.Group>
-      <Form.Group controlId="formGroupBirthdate">
-        <Form.Label>Birthdate</Form.Label>
-        <Form.Control type="date" placeholder="00-00-0000" value={birthdate} onChange={e => setBirthdate(e.target.value)} required />
-        <Form.Control.Feedback type='invalid'>Please enter a valid birthday.</Form.Control.Feedback>
-      </Form.Group>
+
       <span>
         <Button type="submit" onClick={handleSubmit}>Submit</Button>
-        
+        {' '}
+        <Link to="/">
           <Button variant="secondary" type="button">Back</Button>
- 
+        </Link>
       </span>
     </Form >
-  )
+  );
 }
 
 RegistrationView.propTypes = {
   register: PropTypes.shape({
+    Name: PropTypes.string.isRequired,
     Username: PropTypes.string.isRequired,
     Password: PropTypes.string.isRequired,
     Email: PropTypes.string.isRequired,
