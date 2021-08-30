@@ -37,8 +37,7 @@ export function RegistrationView(props) {
         .then(response => {
           const data = response.data;
           console.log(data);
-          window.open('/', '_self'); // the second argument '_self' is necessary so that the page will open in the current tab
-        })
+          })
         .catch(e => {
           console.log('error registering the user')
         });
@@ -150,7 +149,9 @@ export function RegistrationView(props) {
       </Form.Group>
 
       <span>
-        <Button type="submit" onClick={handleSubmit}>Submit</Button>
+        <Link to="/" component={() => ( 
+        <Button type="button" onClick={handleSubmit}> Submit </Button> )} >
+        </Link>
         {' '}
         <Link to="/">
           <Button variant="secondary" type="button">Back</Button>
