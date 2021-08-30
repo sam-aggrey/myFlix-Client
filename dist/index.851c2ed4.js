@@ -21918,7 +21918,7 @@ class MainView extends _reactDefault.default.Component {
     }
     //  Get user recent data from DB
     getUsers(token) {
-        _axiosDefault.default.post('https://sammy-flix.herokuapp.com/movies', {
+        _axiosDefault.default.post('https://sammy-flix.herokuapp.com/users', {
             headers: {
                 Authorization: `Bearer ${token}`
             }
