@@ -57,7 +57,7 @@ export class MainView extends React.Component {
 
   //  Get user recent data from DB
   getUsers(token) {
-    axios.post('https://sammy-flix.herokuapp.com/users', {
+    axios.post('https://sammy-flix.herokuapp.com/movies', {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(response => {
