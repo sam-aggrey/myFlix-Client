@@ -1,4 +1,4 @@
-3174
+3178
 83C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\reusify\benchmarks132741976031342908 1
 115C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@popperjs\core\dist\esm\modifiers\computeStyles.js121436361000000000 0
 103C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@restart\hooks\cjs\useMountEffect.d.ts121436361000000000 0
@@ -25,7 +25,7 @@
 62C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\.gitignore132714187268405589 0
 96C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\fast-glob\out\readers\stream.js121436361000000000 0
 92C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\ModalFooter132741976173544403 1
-93C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\movie-card\movie-card.scss132714187300053593 0
+93C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\movie-card\movie-card.scss132742938838393162 0
 66C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\index.scss132714187302054093 0
 120C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@babel\runtime\helpers\esm\possibleConstructorReturn.js121012626000000000 0
 102C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@restart\hooks\cjs\useBreakpoint.d.ts121436361000000000 0
@@ -34,7 +34,7 @@
 107C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@restart\hooks\esm\useDebouncedCallback.js121436361000000000 0
 55C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src132714187302044101 1
 97C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dom-helpers\esm\toggleClass.d.ts121436361000000000 0
-56C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist132742028047318693 1
+56C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist132748047267762818 1
 112C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-router\es\warnAboutDeprecatedESMImport.js121436361000000000 0
 95C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dom-helpers\cjs\insertAfter.js121436361000000000 0
 91C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\prop-types-extra\lib\utils132741976049391884 1
@@ -46,7 +46,7 @@
 84C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\uncontrollable\test132741976077429120 1
 103C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@nodelib\fs.scandir\out\constants.d.ts121436361000000000 0
 78C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-dom\cjs132741976133264336 1
-107C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\registration-view\registration-view.scss132714187300423670 0
+107C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\registration-view\registration-view.scss132742935374504405 0
 96C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\cjs\FormText.js121436361000000000 0
 94C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@types\scheduler\package.json132741976499804655 0
 97C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\NavItem.d.ts121436361000000000 0
@@ -69,25 +69,27 @@
 96C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dom-helpers\cjs\scrollLeft.d.ts121436361000000000 0
 81C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-router\cjs132741976099945995 1
 102C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\FormText\package.json121436361000000000 0
-106C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\registration-view\registration-view.jsx132742010484776972 0
+106C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\registration-view\registration-view.jsx132742930116515737 0
 99C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\cjs\ToastHeader.js121436361000000000 0
 61C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\yarn.lock132741967903514871 0
 97C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\fast-glob\out\utils\pattern.d.ts121436361000000000 0
 104C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\cjs\DropdownButton.d.ts121436361000000000 0
 103C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@babel\runtime\helpers\esm\decorate.js121012626000000000 0
-66C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components132742024388893915 1
+66C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components132742099592530299 1
+99C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@babel\runtime\helpers\decorate.js121012626000000000 0
+80C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\queue-microtask132741976511680764 1
+109C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\manageAriaHidden\package.json121436361000000000 0
+94C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\navbar-view\navbar-view.jsx132742099928831713 0
 96C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\Collapse.js121436361000000000 0
 94C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\fast-glob\out\utils\stream.js121436361000000000 0
 97C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\Container.js121436361000000000 0
 79C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\profile-view132742025471282444 1
 109C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-router-dom\umd\react-router-dom.min.js121436361000000000 0
 66C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\index.html132714187301393925 0
-76C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\glob-parent132741976511524498 1
-102C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\tiny-invariant\dist\tiny-invariant.js121436361000000000 0
 96C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\fast-glob\out\providers\sync.js121436361000000000 0
 104C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@restart\hooks\esm\useAnimationFrame.js121436361000000000 0
 95C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\Popover.js121436361000000000 0
-92C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\movie-card\movie-card.jsx132742008531440021 0
+92C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\movie-card\movie-card.jsx132742086772187077 0
 101C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-router\umd\react-router.min.js121436361000000000 0
 96C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@parcel\source-map\node_modules132741976485256428 1
 111C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@popperjs\core\lib\utils\getBasePlacement.d.ts121436361000000000 0
@@ -137,6 +139,9 @@
 74C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.158846c0.js132714187273466885 0
 77C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\movie-view132714187300133611 1
 79C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\slash\index.js121436361000000000 0
+85C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-router\modules132741976088433116 1
+78C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\navbar-view132742099841357866 1
+106C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\useOverlayOffset.d.ts121436361000000000 0
 90C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@types\prop-types\LICENSE132701509570000000 0
 99C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\ModalDialog.js121436361000000000 0
 115C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\esm\mergeOptionsWithPopperConfig.js121436361000000000 0
@@ -163,10 +168,10 @@
 115C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@popperjs\core\lib\dom-utils\getNodeScroll.js.flow121436361000000000 0
 96C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\profile-view\profile-view.jsx132742027911241214 0
 93C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\package.json132741976516756497 0
-97C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\profile-view\profile-view.scss132742025471282444 0
+97C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\profile-view\profile-view.scss132742939517082332 0
 75C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\fill-range132741976521136217 1
 93C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\uncontrollable\tsconfig.json121436361000000000 0
-92C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\movie-view\movie-view.jsx132741989473391856 0
+92C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\movie-view\movie-view.jsx132742086515298419 0
 89C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@popperjs\core\lib\utils132741976168683213 1
 93C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\movie-view\movie-view.scss132714187300133611 0
 101C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\Tooltip\package.json121436361000000000 0
@@ -176,18 +181,18 @@
 108C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@babel\runtime\helpers\esm\readOnlyError.js121012626000000000 0
 92C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@types\prop-types\README.md132701509570000000 0
 71C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@types132741976477382272 1
-90C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\main-view\main-view.jsx132742019043810954 0
+90C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\main-view\main-view.jsx132742966497611445 0
 102C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\cjs\isOverflowing.d.ts121436361000000000 0
 98C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\fast-glob\out\managers\tasks.d.ts121436361000000000 0
-91C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\main-view\main-view.scss132714187299783521 0
+91C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\main-view\main-view.scss132742938267156566 0
 108C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@babel\runtime\helpers\esm\asyncIterator.js121012626000000000 0
 109C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\useWaitForDOMRef\package.json121436361000000000 0
 86C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\.bin\loose-envify.ps1132741976522421941 0
-92C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\login-view\login-view.jsx132741826960803866 0
+92C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\login-view\login-view.jsx132748047263343814 0
 77C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\run-parallel132741976511993287 1
 102C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\BootstrapModalManager132741976156230109 1
 112C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-router\node_modules\.bin\loose-envify.cmd132741967822321079 0
-93C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\login-view\login-view.scss132714187299383425 0
+93C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\src\components\login-view\login-view.scss132742937722258065 0
 81C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\ignore\README.md121436361000000000 0
 69C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\.bin132741976522734474 1
 103C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\esm\manageAriaHidden.js121436361000000000 0
@@ -274,6 +279,8 @@
 102C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\DropdownMenu.d.ts121436361000000000 0
 84C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dom-helpers\isInput132741976136795216 1
 76C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dom-helpers132741976510743206 1
+76C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\glob-parent132741976511524498 1
+102C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\tiny-invariant\dist\tiny-invariant.js121436361000000000 0
 98C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\Dropdown.d.ts121436361000000000 0
 71C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\globby132741976521292490 1
 94C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dom-helpers\esm\addClass.d.ts121436361000000000 0
@@ -353,9 +360,6 @@
 95C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@parcel\source-map\src\node.js121436361000000000 0
 99C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\cjs\ToastBody.d.ts121436361000000000 0
 81C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\prop-types-extra132741976520979973 1
-99C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@babel\runtime\helpers\decorate.js121012626000000000 0
-80C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\queue-microtask132741976511680764 1
-109C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\manageAriaHidden\package.json121436361000000000 0
 133C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@babel\runtime\helpers\esm\classCheckPrivateStaticFieldDescriptor.js121012626000000000 0
 101C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\ButtonToolbar.js121436361000000000 0
 98C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\cjs\PageItem.d.ts121436361000000000 0
@@ -566,11 +570,11 @@
 91C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dom-helpers\cjs\index.d.ts121436361000000000 0
 86C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\Image132741976172594205 1
 96C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\uncontrollable\lib\esm\index.js121436361000000000 0
+111C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@babel\runtime\helpers\classPrivateFieldSet.js121012626000000000 0
+100C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\esm\ownerDocument.js121436361000000000 0
+78C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\scheduler\cjs132741976070553671 1
 105C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\uncontrollable\lib\esm\uncontrollable.js121436361000000000 0
 101C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-router\modules\MemoryRouter.js121436361000000000 0
-111C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@babel\runtime\helpers\classPrivateFieldSet.js121012626000000000 0
-78C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\scheduler\cjs132741976070553671 1
-100C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\esm\ownerDocument.js121436361000000000 0
 91C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\NavContext132741976175584923 1
 96C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\uncontrollable\lib\esm\utils.js121436361000000000 0
 98C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\uncontrollable\lib\cjs\index.d.ts121436361000000000 0
@@ -610,7 +614,6 @@
 97C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\cjs\Dropdown.d.ts121436361000000000 0
 82C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\tiny-warning\dist132741976060781269 1
 97C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dom-helpers\parents\package.json121436361000000000 0
-86C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dequal\dist\index.mjs121436361000000000 0
 87C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\tiny-invariant\LICENSE121436361000000000 0
 101C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\cjs\PopoverBody.d.ts121436361000000000 0
 93C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\Media.js121436361000000000 0
@@ -641,8 +644,8 @@
 110C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\fast-glob\out\providers\matchers\partial.d.ts121436361000000000 0
 125C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\scheduler\cjs\scheduler-unstable_post_task.production.min.js121436361000000000 0
 90C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\tiny-warning\src\index.js132071083860000000 0
-102C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\tiny-warning\dist\tiny-warning.cjs.js132071084450000000 0
 89C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dequal\dist\index.min.js121436361000000000 0
+102C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\tiny-warning\dist\tiny-warning.cjs.js132071084450000000 0
 85C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\.bin\detect-libc.ps1132741976522219136 0
 97C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@parcel\source-map\dist\utils.js121436361000000000 0
 100C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\cjs\ToastContext.js121436361000000000 0
@@ -844,7 +847,6 @@
 79C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.c0be6109.css.map132714187279928508 0
 86C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\popper132741976101946473 1
 87C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\js-tokens\CHANGELOG.md131616142690000000 0
-95C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\esm\popper.d.ts121436361000000000 0
 101C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-transition-group\CSSTransition132741976078054149 1
 91C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-router-dom\README.md121436361000000000 0
 98C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\mini-create-react-context\LICENSE121436361000000000 0
@@ -857,6 +859,7 @@
 94C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dom-helpers\esm\scrollTo.d.ts121436361000000000 0
 103C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\PopoverHeader.d.ts121436361000000000 0
 84C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\cjs132741976192939236 1
+79C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.b7ac82d8.css.map132748047266752598 0
 103C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\cjs\AccordionItem.d.ts121436361000000000 0
 95C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-transition-group\LICENSE121436361000000000 0
 100C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-transition-group\node_modules132741976483007642 1
@@ -986,7 +989,7 @@
 101C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@babel\runtime\helpers\wrapRegExp.js121012626000000000 0
 105C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-router-dom\umd\react-router-dom.js121436361000000000 0
 92C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-router-dom\es\Link.js121436361000000000 0
-78C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.851c2ed4.js.map132742028047278689 0
+78C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.851c2ed4.js.map132748047267732806 0
 93C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\PopoverTitle132741976176345108 1
 91C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dom-helpers\esm\closest.js121436361000000000 0
 107C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\ButtonToolbar\package.json121436361000000000 0
@@ -1040,7 +1043,6 @@
 102C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@restart\hooks\cjs\useStateAsync.d.ts121436361000000000 0
 85C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-router\LICENSE121436361000000000 0
 83C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\esm132741976124332094 1
-85C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-router\modules132741976088433116 1
 102C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@restart\hooks\cjs\useFocusManager.js121436361000000000 0
 87C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-router\Prompt.js121436361000000000 0
 95C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\cjs\TabPane.js121436361000000000 0
@@ -1163,6 +1165,7 @@
 96C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\esm\Overlay.d.ts121436361000000000 0
 84C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\globby\package.json132741976519006198 0
 93C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\esm\popper.js121436361000000000 0
+95C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\esm\popper.d.ts121436361000000000 0
 95C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\esm\Portal.d.ts121436361000000000 0
 93C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\esm\Portal.js121436361000000000 0
 104C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-overlays\esm\safeFindDOMNode.d.ts121436361000000000 0
@@ -1256,8 +1259,8 @@
 97C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dom-helpers\cjs\toggleClass.d.ts121436361000000000 0
 93C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\Nav.d.ts121436361000000000 0
 83C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-is\README.md121436361000000000 0
-98C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\TabContent.js121436361000000000 0
 115C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\transitionEndListener\package.json121436361000000000 0
+98C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\TabContent.js121436361000000000 0
 116C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@parcel\source-map\parcel_sourcemap_node\Cargo.lock121436361000000000 0
 77C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-is\umd132741976036017741 1
 101C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-is\umd\react-is.development.js121436361000000000 0
@@ -1424,8 +1427,8 @@
 95C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dom-helpers\esm\isVisible.d.ts121436361000000000 0
 91C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dom-helpers\cjs\closest.js121436361000000000 0
 93C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\TabContainer132741976177295329 1
-100C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\TabContent.d.ts121436361000000000 0
 91C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\TabContent132741976177425381 1
+100C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\TabContent.d.ts121436361000000000 0
 94C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\Fade.d.ts121436361000000000 0
 107C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\prop-types-extra\lib\componentOrElement.js121436361000000000 0
 82C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\anymatch\index.js121436361000000000 0
@@ -1703,7 +1706,6 @@
 100C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\cjs\TabContext.d.ts121436361000000000 0
 112C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@babel\runtime\helpers\taggedTemplateLiteral.js121012626000000000 0
 95C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\types.d.ts121436361000000000 0
-106C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\useOverlayOffset.d.ts121436361000000000 0
 114C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\esm\usePopperMarginModifiers.d.ts121436361000000000 0
 109C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\react-bootstrap\ElementChildren\package.json121436361000000000 0
 92C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dom-helpers\esm\listen.d.ts121436361000000000 0
@@ -2481,6 +2483,7 @@
 101C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@restart\hooks\cjs\useSafeState.d.ts121436361000000000 0
 81C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dequal\readme.md121436361000000000 0
 85C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dequal\dist\index.js121436361000000000 0
+86C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\dequal\dist\index.mjs121436361000000000 0
 86C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\csstype\index.js.flow121436361000000000 0
 118C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\@babel\runtime\helpers\classExtractFieldDescriptor.js121012626000000000 0
 80C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\node_modules\csstype\LICENSE121436361000000000 0
@@ -3161,9 +3164,10 @@
 75C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.6b13d5c4.css132714187275627419 0
 75C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.74f35ca4.css132714187275697414 0
 78C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.7744e5f6.js.map132741962655602517 0
-75C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.7d6d770d.css132742028046159363 0
-79C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.7d6d770d.css.map132742028046358465 0
-74C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.851c2ed4.js132742028046628554 0
+75C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.7d6d770d.css132742086707280869 0
+79C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.7d6d770d.css.map132742086707480896 0
+74C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.851c2ed4.js132748047267053828 0
+75C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.b7ac82d8.css132748047266572515 0
 75C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.c0be6109.css132714187279508410 0
 78C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.c1014b73.js.map132714187283639441 0
 74C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.c17874aa.js132714187285609932 0
@@ -3172,4 +3176,4 @@
 74C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.e8efb7ce.js132714187291621456 0
 78C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.e8efb7ce.js.map132714187293281875 0
 75C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.ecff6712.css132714187293661982 0
-67C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.html132742028046138418 0
+67C:\Users\lenovo\Desktop\MyFlix-Client\myFlix-Client\dist\index.html132748047266562529 0
