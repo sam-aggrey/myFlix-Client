@@ -21918,7 +21918,7 @@ class MainView extends _reactDefault.default.Component {
     }
     //  Get user recent data from DB
     getUsers(token) {
-        _axiosDefault.default.post('https://sammy-flix.herokuapp.com/users', {
+        _axiosDefault.default.post('https://sammy-flix.herokuapp.com/movies', {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -22115,7 +22115,7 @@ exports.default = MainView;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","axios":"7rA65","../login-view/login-view":"21DRQ","../movie-card/movie-card":"3mCkk","../movie-view/movie-view":"59DeK","../registration-view/registration-view":"7FMlT","react-bootstrap/Row":"3fzwD","react-bootstrap/Col":"2D0r8","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP","react-router-dom":"1PMSK","../director-view/director-view":"62pi2","../genre-view/genre-view":"56Gwm","../profile-view/profile-view":"6iogq","react-bootstrap/Container":"3Mt3t","./main-view.scss":"61hj2","../navbar-view/navbar-view":"669P6"}],"7rA65":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","../login-view/login-view":"21DRQ","../movie-card/movie-card":"3mCkk","../movie-view/movie-view":"59DeK","../registration-view/registration-view":"7FMlT","react-bootstrap/Row":"3fzwD","react-bootstrap/Col":"2D0r8","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP","react-router-dom":"1PMSK","../director-view/director-view":"62pi2","../genre-view/genre-view":"56Gwm","../profile-view/profile-view":"6iogq","../navbar-view/navbar-view":"669P6","react-bootstrap/Container":"3Mt3t","./main-view.scss":"61hj2"}],"7rA65":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 
 },{"./lib/axios":"4qfhW"}],"4qfhW":[function(require,module,exports) {
@@ -23511,7 +23511,7 @@ function LoginView(props) {
     const [password, setPassword] = _react.useState('');
     const handleSubmit = (e)=>{
         e.preventDefault();
-        /* Send a request to the server for authentication */ _axiosDefault.default.post('https://sammy-flix.herokuapp.com/users', {
+        /* Send a request to the server for authentication */ _axiosDefault.default.post('https://sammy-flix.herokuapp.com/login', {
             Username: username,
             Password: password
         }).then((response)=>{
@@ -23641,7 +23641,7 @@ $RefreshReg$(_c, "LoginView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-bootstrap/Form":"6A5ko","react-bootstrap/Button":"1ru0l","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP","axios":"7rA65","prop-types":"4dfy5","react-router-dom":"1PMSK","./login-view.scss":"4mC8D"}],"6A5ko":[function(require,module,exports) {
+},{"react":"3b2NM","react-bootstrap/Form":"6A5ko","react-bootstrap/Button":"1ru0l","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP","axios":"7rA65","prop-types":"4dfy5","./login-view.scss":"4mC8D","react-router-dom":"1PMSK"}],"6A5ko":[function(require,module,exports) {
 "use strict";
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 exports.__esModule = true;
@@ -25905,7 +25905,7 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"sc73e"}],"1PMSK":[function(require,module,exports) {
+},{"react-refresh/runtime":"sc73e"}],"4mC8D":[function() {},{}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -28305,7 +28305,7 @@ function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
 }
 module.exports = hoistNonReactStatics;
 
-},{"react-is":"68QIU"}],"4mC8D":[function() {},{}],"3mCkk":[function(require,module,exports) {
+},{"react-is":"68QIU"}],"3mCkk":[function(require,module,exports) {
 var helpers = require("../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28879,7 +28879,6 @@ function RegistrationView(props) {
         }).then((response)=>{
             const data = response.data;
             console.log(data);
-            window.open('/', '_self'); // the second argument '_self' is necessary so that the page will open in the current tab
         }).catch((e1)=>{
             console.log('error registering the user');
         });
@@ -28927,26 +28926,26 @@ function RegistrationView(props) {
         className: "register justify-content-md-center",
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 85
+            lineNumber: 84
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_rowDefault.default, {
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 86
+            lineNumber: 85
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Group, {
         controlId: "formName",
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 87
+            lineNumber: 86
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Label, {
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 88
+            lineNumber: 87
         },
         __self: this
     }, "Name:"), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control, {
@@ -28956,7 +28955,7 @@ function RegistrationView(props) {
         ,
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 89
+            lineNumber: 88
         },
         __self: this
     }), Object.keys(nameError).map((key)=>{
@@ -28964,7 +28963,7 @@ function RegistrationView(props) {
             key: key,
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-                lineNumber: 92
+                lineNumber: 91
             },
             __self: this
         }, nameError[key]));
@@ -28972,13 +28971,13 @@ function RegistrationView(props) {
         controlId: "formUsername",
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 100
+            lineNumber: 99
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Label, {
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 101
+            lineNumber: 100
         },
         __self: this
     }, "Username:"), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control, {
@@ -28988,7 +28987,7 @@ function RegistrationView(props) {
         ,
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 102
+            lineNumber: 101
         },
         __self: this
     }), Object.keys(usernameError).map((key)=>{
@@ -28996,27 +28995,27 @@ function RegistrationView(props) {
             key: key,
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-                lineNumber: 105
+                lineNumber: 104
             },
             __self: this
         }, usernameError[key]));
     })), /*#__PURE__*/ _reactDefault.default.createElement(_rowDefault.default, {
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 112
+            lineNumber: 111
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Group, {
         controlId: "formPassword",
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 113
+            lineNumber: 112
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Label, {
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 114
+            lineNumber: 113
         },
         __self: this
     }, "Create Password:"), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control, {
@@ -29026,7 +29025,7 @@ function RegistrationView(props) {
         ,
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 115
+            lineNumber: 114
         },
         __self: this
     }), Object.keys(passwordError).map((key)=>{
@@ -29034,27 +29033,27 @@ function RegistrationView(props) {
             key: key,
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-                lineNumber: 118
+                lineNumber: 117
             },
             __self: this
         }, passwordError[key]));
     }))), /*#__PURE__*/ _reactDefault.default.createElement(_rowDefault.default, {
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 126
+            lineNumber: 125
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Group, {
         controlId: "formEmail",
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 127
+            lineNumber: 126
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Label, {
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 128
+            lineNumber: 127
         },
         __self: this
     }, "Email:"), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control, {
@@ -29064,7 +29063,7 @@ function RegistrationView(props) {
         ,
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 129
+            lineNumber: 128
         },
         __self: this
     }), Object.keys(emailError).map((key)=>{
@@ -29072,7 +29071,7 @@ function RegistrationView(props) {
             key: key,
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-                lineNumber: 132
+                lineNumber: 131
             },
             __self: this
         }, emailError[key]));
@@ -29080,13 +29079,13 @@ function RegistrationView(props) {
         controlId: "formBirthdate",
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 140
+            lineNumber: 139
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Label, {
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 141
+            lineNumber: 140
         },
         __self: this
     }, "Birthdate:"), /*#__PURE__*/ _reactDefault.default.createElement(_formDefault.default.Control, {
@@ -29096,7 +29095,7 @@ function RegistrationView(props) {
         ,
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 142
+            lineNumber: 141
         },
         __self: this
     }), Object.keys(birthdateError).map((key)=>{
@@ -29104,29 +29103,33 @@ function RegistrationView(props) {
             key: key,
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-                lineNumber: 145
+                lineNumber: 144
             },
             __self: this
         }, birthdateError[key]));
     })), /*#__PURE__*/ _reactDefault.default.createElement("span", {
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
+            lineNumber: 151
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: "/",
+        component: ()=>/*#__PURE__*/ _reactDefault.default.createElement(_buttonDefault.default, {
+                type: "button",
+                onClick: handleSubmit
+            }, " Submit ")
+        ,
+        __source: {
+            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
             lineNumber: 152
         },
         __self: this
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_buttonDefault.default, {
-        type: "submit",
-        onClick: handleSubmit,
-        __source: {
-            fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 153
-        },
-        __self: this
-    }, "Submit"), ' ', /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+    }), ' ', /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
         to: "/",
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 155
+            lineNumber: 156
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_buttonDefault.default, {
@@ -29134,7 +29137,7 @@ function RegistrationView(props) {
         type: "button",
         __source: {
             fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\registration-view\\registration-view.jsx",
-            lineNumber: 156
+            lineNumber: 157
         },
         __self: this
     }, "Back")))));
@@ -40396,7 +40399,7 @@ ProfileView.propTypes = {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","axios":"7rA65","prop-types":"4dfy5","react-bootstrap":"4n7hB","./profile-view.scss":"66yc4","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP"}],"66yc4":[function() {},{}],"61hj2":[function() {},{}],"669P6":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","prop-types":"4dfy5","react-bootstrap":"4n7hB","./profile-view.scss":"66yc4","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP"}],"66yc4":[function() {},{}],"669P6":[function(require,module,exports) {
 var helpers = require("../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40509,6 +40512,6 @@ exports.default = NavBar;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-router-dom":"1PMSK","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP"}],"2N7FH":[function() {},{}]},["1j6wU","2JMtt","2evon"], "2evon", "parcelRequire1216")
+},{"react":"3b2NM","react-router-dom":"1PMSK","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP"}],"61hj2":[function() {},{}],"2N7FH":[function() {},{}]},["1j6wU","2JMtt","2evon"], "2evon", "parcelRequire1216")
 
 //# sourceMappingURL=index.851c2ed4.js.map
