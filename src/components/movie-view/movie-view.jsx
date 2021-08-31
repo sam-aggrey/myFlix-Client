@@ -78,7 +78,7 @@ MovieView.propTypes = {
   movie: propTypes.shape({
     Title: propTypes.string.isRequired,
     Description: propTypes.string.isRequired,
-    ImageURL: propTypes.string.isRequired,
+    ImageURL: propTypes.string,
     Featured: propTypes.bool,
     Genre: propTypes.shape({
       Name: propTypes.string.isRequired
