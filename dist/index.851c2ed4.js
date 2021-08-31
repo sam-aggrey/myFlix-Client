@@ -28347,7 +28347,7 @@ class MovieCard extends _reactDefault.default.Component {
         }, /*#__PURE__*/ _reactDefault.default.createElement(_cardDefault.default.Img, {
             className: "image-container",
             variant: "top",
-            src: movie.ImageURL,
+            src: movie.ImagePath,
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-card\\movie-card.jsx",
                 lineNumber: 17
@@ -28398,7 +28398,7 @@ MovieCard.propTypes = {
     movie: _propTypesDefault.default.shape({
         Title: _propTypesDefault.default.string.isRequired,
         Description: _propTypesDefault.default.string.isRequired,
-        ImageURL: _propTypesDefault.default.string,
+        ImagePath: _propTypesDefault.default.string,
         Featured: _propTypesDefault.default.bool
     }).isRequired
 };
@@ -28642,7 +28642,7 @@ class MovieView extends _reactDefault.default.Component {
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("img", {
-            src: movie.ImageURL,
+            src: movie.ImagePath,
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\movie-view\\movie-view.jsx",
                 lineNumber: 44
@@ -28773,7 +28773,7 @@ MovieView.propTypes = {
     movie: _propTypesDefault.default.shape({
         Title: _propTypesDefault.default.string.isRequired,
         Description: _propTypesDefault.default.string.isRequired,
-        ImageURL: _propTypesDefault.default.string,
+        ImagePath: _propTypesDefault.default.string,
         Featured: _propTypesDefault.default.bool,
         Genre: _propTypesDefault.default.shape({
             Name: _propTypesDefault.default.string.isRequired
