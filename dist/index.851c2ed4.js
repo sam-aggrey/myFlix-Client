@@ -28408,7 +28408,7 @@ MovieCard.propTypes = {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","prop-types":"4dfy5","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP","react-bootstrap/Button":"1ru0l","react-bootstrap/Card":"1CZWQ","react-router-dom":"1PMSK","./movie-card.scss":"3HeRa"}],"1CZWQ":[function(require,module,exports) {
+},{"react":"3b2NM","prop-types":"4dfy5","react-bootstrap/Button":"1ru0l","react-bootstrap/Card":"1CZWQ","./movie-card.scss":"3HeRa","react-router-dom":"1PMSK","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP"}],"1CZWQ":[function(require,module,exports) {
 "use strict";
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 exports.__esModule = true;
