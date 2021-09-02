@@ -28408,7 +28408,7 @@ MovieCard.propTypes = {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","prop-types":"4dfy5","react-bootstrap/Button":"1ru0l","react-bootstrap/Card":"1CZWQ","./movie-card.scss":"3HeRa","react-router-dom":"1PMSK","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP"}],"1CZWQ":[function(require,module,exports) {
+},{"react":"3b2NM","prop-types":"4dfy5","@parcel/transformer-js/src/esmodule-helpers.js":"6Weu9","../../../../../../AppData/Roaming/nvm/v14.16.0/node_modules/parcel/node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"3HttP","react-bootstrap/Button":"1ru0l","react-bootstrap/Card":"1CZWQ","react-router-dom":"1PMSK","./movie-card.scss":"3HeRa"}],"1CZWQ":[function(require,module,exports) {
 "use strict";
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 exports.__esModule = true;
@@ -28614,7 +28614,7 @@ class MovieView extends _reactDefault.default.Component {
     addFavorite() {
         const token = localStorage.getItem('token');
         const username = localStorage.getItem('user');
-        _axiosDefault.default.post(`https:myflixbypartearroyo.herokuapp.com/users/${username}/movies/${this.props.movie._id}`, {
+        _axiosDefault.default.post(`https://sammy-flix.herokuapp.com/users/${username}/movies/${this.props.movie._id}`, {
         }, {
             headers: {
                 Authorization: `Bearer ${token}`
@@ -29343,41 +29343,41 @@ class GenreView extends _reactDefault.default.Component {
             className: "genre-view",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\genre-view\\genre-view.jsx",
-                lineNumber: 13
+                lineNumber: 14
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "genre-name",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\genre-view\\genre-view.jsx",
-                lineNumber: 15
+                lineNumber: 16
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\genre-view\\genre-view.jsx",
-                lineNumber: 16
+                lineNumber: 17
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
             className: "value",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\genre-view\\genre-view.jsx",
-                lineNumber: 17
+                lineNumber: 18
             },
             __self: this
         }, movie.Genre.Name))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "genre-description",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\genre-view\\genre-view.jsx",
-                lineNumber: 20
+                lineNumber: 21
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
             className: "value",
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\genre-view\\genre-view.jsx",
-                lineNumber: 21
+                lineNumber: 22
             },
             __self: this
         }, movie.Genre.Description)), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrapDefault.default, {
@@ -29387,7 +29387,7 @@ class GenreView extends _reactDefault.default.Component {
             },
             __source: {
                 fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\genre-view\\genre-view.jsx",
-                lineNumber: 24
+                lineNumber: 25
             },
             __self: this
         }, "Back")));
@@ -39992,7 +39992,7 @@ class ProfileView extends _reactDefault.default.Component {
     // get user method
     getUser(token) {
         const username = localStorage.getItem('user');
-        _axiosDefault.default.get(`https://myflixbypartearroyo.herokuapp.com/users/${username}`, {
+        _axiosDefault.default.get(`https://sammy-flix.herokuapp.com/users/${username}`, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -40012,7 +40012,7 @@ class ProfileView extends _reactDefault.default.Component {
     removeFavouriteMovie() {
         const token = localStorage.getItem('token');
         const username = localStorage.getItem('user');
-        _axiosDefault.default.delete(`https://myflixbypartearroyo.herokuapp.com/users/${username}/movies/${movie._id}`, {
+        _axiosDefault.default.delete(`https://sammy-flix.herokuapp.com/users/${username}/movies/${movie._id}`, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -40040,7 +40040,7 @@ class ProfileView extends _reactDefault.default.Component {
         e.preventDefault();
         const token = localStorage.getItem('token');
         const username = localStorage.getItem('user');
-        _axiosDefault.default.put(`https://myflixbypartearroyo.herokuapp.com/users/${username}`, {
+        _axiosDefault.default.put(`https://sammy-flix.herokuapp.com/users/${username}`, {
             headers: {
                 Authorization: `Bearer ${token}`
             },
@@ -40085,7 +40085,7 @@ class ProfileView extends _reactDefault.default.Component {
         e.preventDefault();
         const token = localStorage.getItem('token');
         const username = localStorage.getItem('user');
-        _axiosDefault.default.delete(`https://myflixbypartearroyo.herokuapp.com/users/${username}`, {
+        _axiosDefault.default.delete(`https://sammy-flix.herokuapp.com/users/${username}`, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
