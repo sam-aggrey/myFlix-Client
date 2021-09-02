@@ -87,7 +87,7 @@ export class ProfileView extends React.Component {
     const token = localStorage.getItem('token');
     const username = localStorage.getItem('user');
 
-    axios.put(`https://sammy-flix.herokuapp.com/users/${Username}`, {
+    axios.put(`https://sammy-flix.herokuapp.com/users/${username}`, {
       headers: { Authorization: `Bearer ${token}` },
       data: {
         Name: newName ? newName : this.state.Name,
@@ -107,7 +107,7 @@ export class ProfileView extends React.Component {
           Birthdate: response.data.Birthdate,
         });
         localStorage.setItem('user', this.state.Username);
-        window.open(`/users/${Username}`, '_self');
+        window.open(`/users/${username}`, '_self');
       })
       .catch(function (error) {
         console.log(error);
