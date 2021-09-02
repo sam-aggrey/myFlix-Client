@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
-import { Button, Card, CardDeck, Form, Row } from 'react-bootstrap';
+import { Button, Card, CardDeck, Form, Row, Col } from 'react-bootstrap';
 import './profile-view.scss';
 
 export class ProfileView extends React.Component {
@@ -49,7 +49,7 @@ export class ProfileView extends React.Component {
   }
 
 
-  removeFavouriteMovie() {
+  removeFavouriteMovie(movie) {
     const token = localStorage.getItem('token');
     const username = localStorage.getItem('user');
 
@@ -87,7 +87,7 @@ export class ProfileView extends React.Component {
     const token = localStorage.getItem('token');
     const username = localStorage.getItem('user');
 
-    axios.put(`https://sammy-flix.herokuapp.com/users/${username}`, {
+    axios.put(`https://sammy-flix.herokuapp.com/users/${Username}`, {
       headers: { Authorization: `Bearer ${token}` },
       data: {
         Name: newName ? newName : this.state.Name,
@@ -107,7 +107,7 @@ export class ProfileView extends React.Component {
           Birthdate: response.data.Birthdate,
         });
         localStorage.setItem('user', this.state.Username);
-        window.open(`/users/${username}`, '_self');
+        window.open(`/users/${Username}`, '_self');
       })
       .catch(function (error) {
         console.log(error);
@@ -169,6 +169,7 @@ export class ProfileView extends React.Component {
                 movies.map((movie) => {
                   if (movie._id === FavoriteMovies.find((favMovie) => favMovie === movie._id)) {
                     return (
+                        <Col md={12} key={movie._id} >
                       <CardDeck className="movie-card-deck">
                         <Card className="favorites-item card-content" style={{ width: '16rem' }} key={movie._id}>
                           <Card.Img style={{ width: '18rem' }} className="movieCard" variant="top" src={movie.ImageURL} />
@@ -180,6 +181,7 @@ export class ProfileView extends React.Component {
                           </Card.Body>
                         </Card>
                       </CardDeck>
+                        </Col>
                     );
                   }
                 })}
