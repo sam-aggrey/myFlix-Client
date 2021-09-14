@@ -36,12 +36,12 @@ import './main-view.scss';
 export class MainView extends React.Component {
   constructor() {
     super();
-//    this.state = {
-//      movies: [],
-//      user: null,
-//    };
-//  }
-this.state = {
+    //    this.state = {
+    //      movies: [],
+    //      user: null,
+    //    };
+    //  }
+    this.state = {
       user: null
     };
   }
@@ -93,11 +93,11 @@ this.state = {
     })
       .then(response => {
         // Assign the result to the state
-//        this.setState({
-//          movies: response.data
-//        });
-        
-      this.props.setMovies(response.data)
+        //        this.setState({
+        //          movies: response.data
+        //        });
+
+        this.props.setMovies(response.data)
       })
       .catch(function (error) {
         console.log(error);
@@ -112,8 +112,8 @@ this.state = {
 
 
   render() {
-//    const { movies, user } = this.state;
-//    console.log("render", user);
+    //    const { movies, user } = this.state;
+    //    console.log("render", user);
     let { movies } = this.props;
     let { user } = this.state;
 
@@ -134,7 +134,7 @@ this.state = {
                 <MovieCard movie={m} />
               </Col>
             ))
-                    return <MoviesList movies={movies}/>;
+            return <MoviesList movies={movies} />;
           }} />
 
           <Route path="/register" render={() => {
@@ -196,4 +196,4 @@ this.state = {
 let mapStateToProps = state => {
   return { movies: state.movies }
 }
-export default connect(mapStateToProps, { setMovies } )(MainView);
+export default connect(mapStateToProps, { setMovies })(MainView);
