@@ -36,7 +36,9 @@ export function RegistrationView(props) {
       })
         .then(response => {
           const data = response.data;
+
           console.log(data);
+              alert("Registration Successful ! Go back to login");
           })
         .catch(e => {
           console.log('error registering the user')
