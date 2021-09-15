@@ -96,7 +96,8 @@ export function RegistrationView(props) {
         </Form.Group>
       </Row>
 
-      <Form.Group controlId="formUsername">
+      <Row>
+        <Form.Group controlId="formUsername">
         <Form.Label>Username:</Form.Label>
         <Form.Control type="text" value={username} onChange={e => setUsername(e.target.value)} />
         {Object.keys(usernameError).map((key) => {
@@ -107,6 +108,7 @@ export function RegistrationView(props) {
           );
         })}
       </Form.Group>
+      </Row>
 
       <Row>
         <Form.Group controlId="formPassword">
@@ -135,7 +137,7 @@ export function RegistrationView(props) {
           })}
         </Form.Group>
       </Row>
-
+  <Row>
       <Form.Group controlId="formBirthdate">
         <Form.Label>Birthdate:</Form.Label>
         <Form.Control type="date" value={birthdate} onChange={e => setBirthdate(e.target.value)} />
@@ -147,9 +149,10 @@ export function RegistrationView(props) {
           );
         })}
       </Form.Group>
+    </Row>
 
       <span>
-        <Link to="/" component={() => ( 
+        <Link to="/" component={() => (
         <Button type="button" onClick={handleSubmit}> Submit </Button> )} >
         </Link>
         {' '}
