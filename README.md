@@ -8,5 +8,10 @@ Using React to build the client-side for an application called myFlix
 As a user, I want to be able to access information on movies, directors, and genres to help me choose what movies to watch.
 ### Dependencies:
 -Parcel -React -React-DOM
+###Frameworks, Technologies & Functionality:
+REACT
+Redux
+Bootstrap
+Axios
 ###  Parcel path to index:
 C:\Users\lenovo\Desktop\myFlix-client\myFlix-client\src/index.html
