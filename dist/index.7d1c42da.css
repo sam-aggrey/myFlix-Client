@@ -43,6 +43,15 @@
 div {
   width: 100%;
 }
+img {
+  width: 50%;
+  float: left;
+  margin-right: 30px;
+}
+
+.fav-button {
+  margin: 0 10px 0 0;
+}
 .profile-view {
   padding: 30px;
   border: 0.3px solid grey;
