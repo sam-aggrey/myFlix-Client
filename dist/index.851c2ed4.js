@@ -42585,22 +42585,7 @@ class NavBar extends _reactDefault.default.Component {
                 lineNumber: 40
             },
             __self: this
-        }, "Log Out")), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form, {
-            inline: true,
-            __source: {
-                fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\navbar-view\\navbar-view.jsx",
-                lineNumber: 45
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.FormControl, {
-            type: "text",
-            placeholder: "Search",
-            __source: {
-                fileName: "C:\\Users\\lenovo\\Desktop\\MyFlix-Client\\myFlix-Client\\src\\components\\navbar-view\\navbar-view.jsx",
-                lineNumber: 46
-            },
-            __self: this
-        })))));
+        }, "Log Out")))));
     }
 }
 exports.default = NavBar;
